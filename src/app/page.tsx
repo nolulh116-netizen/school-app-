@@ -5,17 +5,21 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { useFirebase } from '@/firebase';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, XCircle } from 'lucide-react';
+import { Rocket } from 'lucide-react';
 
 export default function Home() {
   const { firebaseApp } = useFirebase();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-24">
-      <Card className="w-full max-w-lg shadow-xl">
-        <CardHeader className="text-center">
-          <CardTitle className="text-4xl font-bold font-headline">Live Deployment Test</CardTitle>
-          <CardDescription className="text-lg">
-            This change will be live on Vercel after you push it to GitHub.
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-24 bg-secondary">
+      <Card className="w-full max-w-lg shadow-2xl border-primary/20">
+        <CardHeader className="text-center items-center gap-4">
+          <div className="bg-primary/20 p-3 rounded-full">
+            <Rocket className="h-6 w-6 text-primary" />
+          </div>
+          <CardTitle className="text-4xl font-bold font-headline">UI Refresh Complete!</CardTitle>
+          <CardDescription className="text-lg text-muted-foreground">
+            Push these changes to GitHub to see them live on your website.
           </CardDescription>
         </CardHeader>
         <CardContent>
