@@ -13,9 +13,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-24">
       <Card className="w-full max-w-lg shadow-xl">
         <CardHeader className="text-center">
-          <CardTitle className="text-4xl font-bold font-headline">Bare Bones Project</CardTitle>
+          <CardTitle className="text-4xl font-bold font-headline">Live Deployment Test</CardTitle>
           <CardDescription className="text-lg">
-            A minimal starting point for your application.
+            This change will be live on Vercel after you push it to GitHub.
           </CardDescription>
         </CardHeader>
         <CardContent>
